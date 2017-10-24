@@ -124,20 +124,23 @@ button{
   outline: 1px solid black;
   padding-top: 1px;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 
 }
 #second h2,h4{
   text-align: center;
 }
 
+#second h2,h5{
+  text-transform: uppercase;
+}
 .box{
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
   display: inline-block;
-
   text-align: center;
   line-height: 0;
+  margin-left: 170px;
 }
 .box img{
-  width: 10%;
+  width: 250px;
 }

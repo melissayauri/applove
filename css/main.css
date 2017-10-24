@@ -15,10 +15,12 @@ body {
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.71429;
+
 }
 
 img {
   vertical-align: middle;
+
 }
 
 .container {
@@ -27,6 +29,7 @@ img {
   margin-left: auto;
   padding-left: 14px;
   padding-right: 14px;
+  overflow: auto;
 }
 
 .container:before, .container:after {
@@ -57,8 +60,11 @@ img {
 }
 
 a {
+
   color: #373B47;
   text-decoration: none;
+  padding:20px;
+  margin-left: 20px;
 }
 
 a:hover {
@@ -70,4 +76,68 @@ a:hover {
 }
 
 /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
+/*.menu{
+width: 100%;
+max-width: 1200px;
+margin: 0px auto;
+outline: 1px solid red;
+}*/
+/*encabezado*/
+header{
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top:0;
+/*  margin-left: 40px;*/
+  margin-top: 30px;
+  padding: 20px;
 
+}
+/*primera seccion*/
+#first{
+  background-image: url(../assets/images/bg-home.jpg);
+outline: 1px solid red;
+margin-top: 120px;
+height: 519px;
+}
+#first .container{
+  text-align: center;
+  color: white;
+}
+.container img{
+float: right;
+width: 60px;
+}
+
+button{
+  background-color: #2ECC71;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+  color: white;
+  border: 1px solid  #2ECC71;
+}
+
+/*segunda seccion*/
+#second{
+  background-color: #f17c72;
+  margin-top: 0;
+  outline: 1px solid black;
+  padding-top: 1px;
+  color: white;
+  font-size: 20px;
+
+}
+#second h2,h4{
+  text-align: center;
+}
+
+.box{
+  outline: 1px solid black;
+  display: inline-block;
+
+  text-align: center;
+  line-height: 0;
+}
+.box img{
+  width: 10%;
+}

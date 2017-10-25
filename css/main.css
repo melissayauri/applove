@@ -61,11 +61,10 @@ img {
 }
 
 a {
-
   color: #373B47;
+  display: block;
   text-decoration: none;
   padding:10px;
-
 }
 
 a:hover {
@@ -77,85 +76,73 @@ a:hover {
 }
 
 /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
-/*.menu{
-width: 100%;
-max-width: 1200px;
-margin: 0px auto;
-outline: 1px solid red;
-}*/
 /*encabezado*/
 header{
+  /*posicionado de manera fija*/
   position: fixed;
   background-color: white;
   width: 100%;
-
+  /*se posiciona desde el inicio*/
   top:0;
-/*  margin-left: 40px;
-  margin-top:
-  padding: 20px;*/
-
 }
+
 ul{
-/*quitar las viñetas*/
+  /*quita las viñetas*/
   list-style: none;
-  /*quitar espacio de lado izquierdo  para que este a la altura del titulo*/
+  /*quitar espacio de lado izquierdo*/
   margin: 0;
   padding: 0;
   /*color de fondo*/
   background:white;
   /*espacio de cada item*/
-line-height: 40px;
+  line-height: 40px;
   /*le devuelve al elemento contenedor para que vuelva a ser bloque*/
   overflow: auto;
   }
-  li{
-    padding: 0;
+
+li{
+  padding: 0;
   /*outline: 1px solid green;*/
   width: 100px;
-  /*la lista se posiciona en una linea pero sigue en bloque*/
-  /*display: inline-block;*/
   text-align: center;
   /*sale del contenedor y no se ve, se debe de incorporar overflow*/
   float:left;
 }
-
-a{
-  /*outline: 1px solid purple;*/
-  /*quitando el subrayado*/
-  text-decoration: none;
-  /*ocupa el espacio de la etiqueta padre*/
-  display: block;
-
-
-
+.container img{
+  /*la imagen se ubica a la derecha*/
+  float: right;
+  width: 60px;
 }
+
 /*primera seccion*/
-#first{
+#first-block{
+  /*fondo con imagen*/
   background-image: url(../assets/images/bg-home.jpg);
-outline: 1px solid red;
-margin-top: 120px;
-height: 519px;
+  /*se aplica para que se posicione debajo del encabezado*/
+  margin-top: 60px;
+  /*altura*/
+  height: 519px;
 }
-#first .container{
+#first-block .container{
   text-align: center;
   color: white;
 }
-#first h1{
+/*titulo de la primera seccion*/
+#first-block h1{
   font-size: 60px;
   margin: 0px;
 }
-#first h2{
-    margin-top: 100px;
+#first-block h2{
+  /*se ubica no tan cerca de la parte superior*/
+  margin-top: 100px;
 }
-#first p{
-margin-top: 0px;
-margin-bottom: 70px;
-}
-.container img{
-float: right;
-width: 60px;
+#first-block p{
+  /*se aplica para que se ubique en el medio*/
+  margin-top: 0px;
+  margin-bottom: 70px;
 }
 
+/*boton*/
 button{
   background-color: #2ECC71;
   padding: 10px 20px 10px 20px;
@@ -164,68 +151,71 @@ button{
 }
 
 /*segunda seccion*/
-#second{
+#second-block{
   background-color: #f17c72;
-
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
   padding-top: 1px;
   color: white;
   font-size: 18px;
-
 }
-#second h2,#second h4{
+/*centra el título y su parráfo*/
+#second-block h2,#second-block h4{
   text-align: center;
 }
-
-#second h2,h5{
+/*convierte a mayuscula*/
+#second-block h2,h5{
   text-transform: uppercase;
 }
-.box{
+.box1{
   /*outline: 1px solid black;*/
   display: inline-block;
   text-align: center;
   line-height: 0;
+  /*espaciado a la izquierda*/
   margin-left: 140px;
 }
-.box img{
+
+.box1 img{
+  /*ancho de la imagen*/
   width: 250px;
 }
 
 /*tercera seccion*/
-
-#third img{
+#third-block img{
   width: 60%;
   margin-left: 260px;
-
 }
 
-#third h2, #third h4{
+#third-block h2, #third-block h4{
   text-align: center;
 }
+
 /*cuarta seccion*/
-
-#fourth img{
+#fourth-block img{
   width: 100%;
-
 }
-#fourth p{
+
+#fourth-block p{
   text-align: center;
   margin-top: 10px;
 
 }
-.box1{
-/*  outline: 1px solid red;*/
+/*contenedor de la imagen y parráfo*/
+.box2{
+  /* outline: 1px solid red;*/
+  /*posicina a los elementos en una linea pero se mantiene en un bloque*/
   display: inline-block;
   width: 320px;
+  /*espaciado de derecha a izquierda*/
   margin-left: 120px;
   margin-right: -50px;
 }
 
 /*pie de pagina*/
 footer{
-
   background-color:#373b47;
   padding: 10px;
+  /*espaciado entre la cuarta sección y el pie de página*/
   margin-top: 100px;
   text-align: center;
   color: white;

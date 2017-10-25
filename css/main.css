@@ -156,3 +156,21 @@ button{
 #third h2, #third h4{
   text-align: center;
 }
+/*cuarta seccion*/
+
+#fourth img{
+  width: 100%;
+
+}
+#fourth p{
+  text-align: center;
+  margin-top: 10px;
+
+}
+.box1{
+/*  outline: 1px solid red;*/
+  display: inline-block;
+  width: 320px;
+  margin-left: 120px;
+  margin-right: -50px;
+}

@@ -127,7 +127,7 @@ button{
   font-size: 18px;
 
 }
-#second h2,h4{
+#second h2,#second h4{
   text-align: center;
 }
 
@@ -143,4 +143,16 @@ button{
 }
 .box img{
   width: 250px;
+}
+
+/*tercera seccion*/
+
+#third img{
+  width: 60%;
+  margin-left: 260px;
+
+}
+
+#third h2, #third h4{
+  text-align: center;
 }
